@@ -11,8 +11,11 @@ var squareball = $(function () {
 
         for (var i = checkins.length - 1; i >= 0; i--) {
             $('<li>' + checkins[i].venue.name + ' - ' + checkins[i].venue.location.state + '</li>').appendTo('.locations');
-        }
 
+            if(checkins[i].venue.categories[0]) {
+                console.log(checkins[i].venue.categories[0].name);
+            }
+        }
 
     });
 

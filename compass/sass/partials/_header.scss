@@ -3,17 +3,12 @@ header {
 
     h1 {
         text-transform: lowercase;
-        font-size: 35px;
+        font-size: 50px;
+        letter-spacing: -3px;
         color: #2d6499;
         margin: 0;
+        padding: 0;
+    }
 
-        @include text-shadow(rgba(#68b4ff, 0.2) 5px 0 5px);
-    }
-    h2 {
-        font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-        color: #1a366c;
-        letter-spacing: 5px;
-        margin: -5px;
-        padding: 0 0 0 70px;
-    }
 }
+

@@ -1,22 +1,55 @@
-// CSS normalize.css reset
 @import "modules/normalize";
-
-// See modules/_base.scss
 @import "modules/base";
-
 @import "partials/header";
-@import "partials/footer";
-@import "partials/ie";
+
 
 body {
     @include typeface;
+    font-size: 17px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #2d6499;
+    border-bottom: 1px dotted #2d6499;
+    margin: 0 0 10px 0;
+    padding: 0 0 5px 0;
 }
 
 #container {
     width: 900px;
     margin: auto;
+    padding: 0 0 50px 0;
 }
 
-#main {
-    padding: 20px 10px;
+p {
+    margin-top: 0;
 }
+
+.description {
+    padding: 10px 0 0 0;
+}
+
+.routes {
+
+    .map {
+        padding: 20px 0;
+    }
+
+    img {
+        @include box-shadow(#808080 3px 3px 10px);
+    }
+
+    em {
+        padding: 10px 0 0 0;
+        display: inline-block;
+    }
+
+}
+
+.numbers {
+    padding: 10px 0;
+}
+
+
+@import "partials/footer";
